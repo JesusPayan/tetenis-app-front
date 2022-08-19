@@ -1,0 +1,19 @@
+.logo{
+    width: 25em;
+    height:25em;
+    max-width: 25em;
+    max-height: 25em;
+    text-align: center;
+    border: solid 1px purple;
+    /* margin-top: 4em; */
+    margin-left: 35%;
+    margin-bottom: 1em;
+    margin-right: 35%;
+}
+.welcome-home{
+    border: solid 1px purple;
+    color: purple;
+    text-align: center;
+    text-shadow: 2px 2px 5px black;
+    font-family: "Sofia", sans-serif
+}

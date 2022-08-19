@@ -1,0 +1,44 @@
+<nav class="navbar navbar-expand-lg bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" routerLink="/home-page"><i class="fa-solid fa-house"></i></a>
+      <button class="navbar-toggler" style="color:red" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" style="color: white;"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item" *ngIf="logged == true">
+            <a class="nav-link" href="#">Tienda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Registrate</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" *ngIf="logged == true" href="#">Promociones</a>
+          </li>
+        </ul>
+
+        <!-- <div class="link-group"> -->
+        
+          <div class="session" *ngIf="logged == true">
+            <a class="navbar-brand" routerLink="#" role="button" *ngIf = "logged == true"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a class="navbar-brand" routerLink="#" (click)="isLogged()" role="button"><i class="fa-solid fa-arrow-right-to-bracket"></i></a>
+          </div>
+          <div class="session"  *ngIf="logged == false">
+            <a class="navbar-brand" routerLink="#" role="button" (click)="isLogged()"><i class="fa-solid fa-user"></i></a>
+          </div>
+          
+        <!-- </div> -->
+      </div>
+    </div>
+</nav>
+
+<!-- <i class="fa-solid fa-arrow-right-to-bracket"></i> -->
+  <!-- iconos:
+    logout:
+    <i class="fa-solid fa-door-open"></i>
+    login:
+    <i class="fa-solid fa-arrow-right-to-bracket"></i>
+    usuario:
+    <i class="fa-solid fa-user">
+    
+  -->

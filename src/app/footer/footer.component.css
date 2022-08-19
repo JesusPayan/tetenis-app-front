@@ -1,0 +1,17 @@
+.container-fluid{
+   background-color: black;
+}
+.footer-ico,.footer-text,.footer-text-down{
+   text-decoration: none;
+   font-size: small;
+   margin-left: 2em;
+   display: inline-block;
+   color: white;
+   text-align: center;
+}
+/* .col{
+   border:  solid 1px red;
+} */
+.footer-text-down{
+   text-align: center;
+}
