@@ -1,0 +1,11 @@
+.card-header{
+    background-color: blue;
+    color: white;
+}
+.form-control{
+    text-align: center;
+    width: 50%;
+}
+.form-select{
+    width: 430%;
+}
