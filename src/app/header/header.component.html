@@ -16,29 +16,14 @@
             <a class="nav-link" *ngIf="logged == true" href="#">Promociones</a>
           </li>
         </ul>
-
-        <!-- <div class="link-group"> -->
-        
           <div class="session" *ngIf="logged == true">
-            <a class="navbar-brand" routerLink="#" role="button" *ngIf = "logged == true"><i class="fa-solid fa-cart-shopping"></i></a>
-            <a class="navbar-brand" routerLink="#" (click)="isLogged()" role="button"><i class="fa-solid fa-arrow-right-to-bracket"></i></a>
+            <a class="navbar-brand" routerLink="" role="button" *ngIf = "logged == true"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a class="navbar-brand" routerLink="/login-page" (click)="isLogged()" role="button"><i class="fa-solid fa-arrow-right-to-bracket"></i></a>
           </div>
-          <div class="session"  *ngIf="logged == false">
-            <a class="navbar-brand" routerLink="#" role="button" (click)="isLogged()"><i class="fa-solid fa-user"></i></a>
+          <div class="session" *ngIf="logged == false">
+            <a class="navbar-brand" routerLink="/login-page" role="button" (click)="isLogged()"><i class="fa-solid fa-user"></i></a>
           </div>
-          
-        <!-- </div> -->
       </div>
     </div>
 </nav>
 
-<!-- <i class="fa-solid fa-arrow-right-to-bracket"></i> -->
-  <!-- iconos:
-    logout:
-    <i class="fa-solid fa-door-open"></i>
-    login:
-    <i class="fa-solid fa-arrow-right-to-bracket"></i>
-    usuario:
-    <i class="fa-solid fa-user">
-    
-  -->
