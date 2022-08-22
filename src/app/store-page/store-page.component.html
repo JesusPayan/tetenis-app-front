@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="container-fluid">
+        <div class="row" style="border: solid red 1px;">
+            <h2 class="text-center">Tienda</h2>
+        </div>
+        <div class="row mt-2">
+            <form action="">
+                <!-- <b><label for="exampleFormControlInput1" class="form-label">Filtrar:</label></b> -->
+                <select class="form-select" aria-label="Default select example" style="width:35% ;">
+                    <option selected>Filtros:</option>
+                    <option value="1">Menor precio</option>
+                    <option value="1">Mayor precio</option>
+                    <option value="1">Descuentos</option>
+                    <option value="1">Categoria</option> 
+                  </select>
+            </form>
+        </div>`
+        <div class="row mt-1" style="border:solid red 1px">
+            <div class="show-store" style="background-color: blue;">
+                   <div class="display" **ngFor="let product of products">
+                    <div class="card">
+                        <h5 class="product-name">{{product}}</h5>
+                    </div>
+                   </div>  
+            </div>
+        </div>
+    </div>
+</div>

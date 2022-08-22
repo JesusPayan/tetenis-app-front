@@ -9,6 +9,8 @@ import { HomeComponent } from './home/home.component';
 import { RouterModule } from '@angular/router';
 import { LoginPageComponent } from './login-page/login-page.component';
 import { SingUpComponent } from './sing-up/sing-up.component';
+import { StorePageComponent } from './store-page/store-page.component';
+import { ProductsComponent } from './products/products.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { SingUpComponent } from './sing-up/sing-up.component';
     FooterComponent,
     HomeComponent,
     LoginPageComponent,
-    SingUpComponent
+    SingUpComponent,
+    StorePageComponent,
+    ProductsComponent
   ],
   imports: [
     BrowserModule,

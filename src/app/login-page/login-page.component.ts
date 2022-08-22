@@ -6,10 +6,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./login-page.component.css']
 })
 export class LoginPageComponent implements OnInit {
+   
+  // let userName: HTMLInputElement = document.querySelector('#txtUserName')
+  // let password: HTMLInputElement = document.querySelector('#txtPassword')
 
-  constructor() { }
-
-  ngOnInit(): void {
+  constructor() { 
+    
   }
 
+  ngOnInit(): void {
+    
+  }
+  validateTextBox(){
+   
+    
+  // if(userName == "")
+  }
 }

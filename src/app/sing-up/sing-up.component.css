@@ -1,11 +1,27 @@
+.sing-up-lg{
+    /* border: solid 1px red;  */
+    /* padding:1em; */
+    margin-left: 1rem;
+    font-size: 40px;
+}
 .card-header{
     background-color: blue;
     color: white;
 }
-.form-control{
+.form-control,.form-select{
     text-align: center;
-    width: 50%;
+    margin: 0 auto 0 auto;
+    width: fit-content;
+    width: 45%;
+}
+.sing-up-action{
+    text-decoration: none;
+    margin-right: 1em;
 }
 .form-select{
     width: 430%;
+}
+.row{
+    
+    margin: auto 0 auto 0;
 }

@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class FooterComponent implements OnInit {
   author:string ='Jesus A. Hernandez Payan.';
   releaceYear:string = '2022';
-  socialNetworktext:string = 'Siguenos en nuestras redes sociales'
+  socialNetworktext:string = 'Para Promociones Siguenos:'
   constructor() { }
 
   ngOnInit(): void {
