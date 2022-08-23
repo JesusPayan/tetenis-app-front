@@ -6,11 +6,15 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
-import { RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 import { LoginPageComponent } from './login-page/login-page.component';
 import { SingUpComponent } from './sing-up/sing-up.component';
-import { StorePageComponent } from './store-page/store-page.component';
-import { ProductsComponent } from './products/products.component';
+
+const routes:Routes=[
+  {path:'',redirectTo:'/home',pathMatch:'full'},
+  {path:'login',component:LoginPageComponent},
+  {path:'sing-up',component:SingUpComponent},
+];
 
 @NgModule({
   declarations: [
@@ -19,16 +23,12 @@ import { ProductsComponent } from './products/products.component';
     FooterComponent,
     HomeComponent,
     LoginPageComponent,
-    SingUpComponent,
-    StorePageComponent,
-    ProductsComponent
+    SingUpComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot([
-      {path:'home-page',component:HomeComponent}
-    ])
+    RouterModule.forRoot(routes)
   ],
   providers: [],
   bootstrap: [AppComponent]

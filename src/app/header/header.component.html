@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" routerLink="/home-page"><i class="fa-solid fa-house"></i></a>
+      <a class="navbar-brand" routerLink="/login"><i class="fa-solid fa-house"></i></a>
       <button class="navbar-toggler" style="color:red" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon" style="color: white;"></span>
       </button>
@@ -13,7 +13,7 @@
             <a class="nav-link" routerLink="/sing-up">Registrate</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" *ngIf="logged == true" href="#">Promociones</a>
+            <a class="nav-link" *ngIf="logged == true" routerLink="/login">Promociones</a>
           </li>
         </ul>
           <div class="session" *ngIf="logged == true">
@@ -21,7 +21,7 @@
             <a class="navbar-brand" routerLink="/login-page" (click)="isLogged()" role="button"><i class="fa-solid fa-arrow-right-to-bracket"></i></a>
           </div>
           <div class="session" *ngIf="logged == false">
-            <a class="navbar-brand" routerLink="/login-page" role="button" (click)="isLogged()"><i class="fa-solid fa-user"></i></a>
+            <a class="navbar-brand" routerLink="/login" role="button" (click)="isLogged()"><i class="fa-solid fa-user"></i></a>
           </div>
       </div>
     </div>
